@@ -1,19 +1,9 @@
 @font-face {
-  font-family: "Avenir Heavy";
-  src: url("../fonts/Avenir-Heavy.ttf") format("ttf")
-}
+    font-family: 'webfontregular';
+    src: url('fonts/avenirltstd-light-webfont.woff2') format('woff2'),
+         url('fonts/avenirltstd-light-webfont.woff') format('woff'),
+         url('fonts/avenirltstd-light-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-  font-family: "Avenir Light";
-  src: url("../fonts/Avenir-Light.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "Avenir Light O";
-  src: url("../fonts/Avenir-Light-Oblique.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "Avenir Medium";
-  src: url("../fonts/Avenir-Medium.ttf") format("ttf")
 }

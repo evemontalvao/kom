@@ -1,7 +1,9 @@
 $background: #000;
 $text: #fff;
-$fontDefault: 'Avenir Light', sans-serif;
+$fontDefault: 'Avenir Light';
 $fontSize: 16px;
+
+$container: calc(100% -70px);
 
 @lost gutter 0px;
 

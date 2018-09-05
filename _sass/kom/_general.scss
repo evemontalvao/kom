@@ -6,11 +6,11 @@ body {
 	background-color: $background;
 	color: $text;
 	padding: 15px 36px;
-	font-family: $fontDefault;
+	font-family: 'webfontregular';
 }
 
 .container {
-	lost-center: 1286px;
+	lost-center: 100%;
 	height: inherit;
 }
 

@@ -1,9 +1,7 @@
 <nav class="Menu">
 	<ul class="row Menu_list">
-		<li class="Menu_listItem"><a href="" class="Menu_listItem__link">Produtos</a></li>
-		<li class="Menu_listItem"><a href="" class="Menu_listItem__link">Delivery</a></li>
-		<li class="Menu_listItem"><a href="" class="Menu_listItem__link">Parceiros</a></li>
-		<li class="Menu_listItem"><a href="" class="Menu_listItem__link">Contatos</a></li>
-		<li class="Menu_listItem"><a href="" class="Menu_listItem__link">Faq</a></li>
+		{% for item in site.menus.header %}
+		<li id="Menu_listItem__{{ loop.index }}" class="Menu_listItem"><a href="{{ item.url }}" class="Menu_listItem__link" title="Go to {{ item.title }}">{{ item.title }}</a></li>
+		{% endfor %}
 	</ul>
 </nav>

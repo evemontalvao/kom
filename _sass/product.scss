@@ -1,0 +1,17 @@
+.Product_sideTitle {
+	lost-column: 1/12;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+	position: relative;
+	top: 290px;
+	font-size: 21px;
+}
+
+.Product_logo {
+	lost-column: 1/12;
+	position: relative;
+	top: 70px;
+	& img {
+		width: 100%;
+	}
+}
