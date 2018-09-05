@@ -19,6 +19,8 @@ gem 'bootstrap', '~> 4.1.3'
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 gem 'jekyll-admin', group: :jekyll_plugins
+gem 'jekyll-menus', '~> 0.6.0'
+
 gem "tale"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
