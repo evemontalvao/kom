@@ -1,0 +1,28 @@
+.Header {
+	float: left;
+	width: 100%;
+	height: 90%;
+	overflow: -webkit-paged-y;
+
+	&_listContainer {
+		lost-column: 2/12;
+		lost-offset: 2.5/12;
+		position: relative;
+		top: 290px;
+	}
+
+	&_logoContainer {
+		position: relative;
+		top: 75px;
+		lost-column: 2/12;
+		lost-offset: 1.5/12;
+	}
+
+	&_h1 {
+		text-transform: uppercase;
+	}
+
+	&_listItem {
+		text-transform: uppercase;
+	}
+}
