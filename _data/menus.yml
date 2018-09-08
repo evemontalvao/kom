@@ -3,6 +3,12 @@ header:
   - url: /api
     title: Produtos
     identifier: api
-  - url: /api
-    title: test
+  - url: /delivery
+    title: Delivery
+  - url: /parceiros
+    title: Parceiros
+  - url: /contatos
+    title: Contatos
+  - url: /faq
+    title: Faq
 ---
