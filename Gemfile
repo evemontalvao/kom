@@ -18,8 +18,8 @@ gem 'bootstrap', '~> 4.1.3'
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
-gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-menus', '~> 0.6.0'
+gem 'jekyll-components'
 
 gem "tale"
 group :jekyll_plugins do

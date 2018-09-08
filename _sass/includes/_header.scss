@@ -10,7 +10,7 @@
 
 	&_listContainer {
 		lost-column: 2/12;
-		lost-offset: 2.5/12;
+		lost-offset: 2.7/12;
 		position: relative;
 		top: 290px;
 	}
@@ -34,12 +34,15 @@
 	}
 
 	&_h1 {
+		font-size: 36px;
 		text-transform: uppercase;
 	}
 
 	&_listItem {
-		text-transform: uppercase;
-		font-size: 19px;
+		margin: 0 0 2px;
+	    font-size: 1.1875rem;
+	    text-transform: uppercase;
+	    letter-spacing: 1.2px;
 	}
 }
 
