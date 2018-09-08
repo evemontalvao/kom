@@ -1,7 +1,21 @@
 .Footer {
-	clear: both;
-	lost-center: 630px;
-	text-align: center;
+	width: 100%;
+    float: left;
+    margin-top: 20px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &:before {
+    	content: '';
+    	width: 60px;
+    	height: 1px;
+    	display: block;
+    	margin: 10px auto;
+    	background-color: #fff;
+
+    }
 
 	&_content {
 		font-size: 13px;

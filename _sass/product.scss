@@ -1,17 +1,144 @@
-.Product_sideTitle {
-	lost-column: 1/12;
-	writing-mode: vertical-rl;
-	transform: rotate(-180deg);
-	position: relative;
-	top: 290px;
-	font-size: 21px;
+.Product {
+	&_description {
+		margin-top: 135px;
+		float: left;
+		lost-offset: 0.3/12;
+		lost-column: 6/12;
+
+		&__highlight {
+			float: inherit;
+			font-size: 18px;
+		}
+
+		&__text {
+			lost-column: 11/12;
+			float: inherit;
+			font-size: 14px;
+			display: inline;
+		}
+
+		&__info {
+			lost-column: 4/12;
+			lost-offset: 6/12;
+		}
+
+		&__infoTitle {
+			text-transform: uppercase;
+			font-size: 0.775rem;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		&__infoSubtitle {
+			text-transform: none;
+			text-align: center;
+			font-weight: 600;
+			font-size: .675rem;;
+		}
+
+		&__infoTable {
+			margin-top: 15px;
+
+			th {
+				text-align: center;
+				padding: 0 0 10px;
+				width:1%;
+    			white-space:nowrap;
+				font-size: 11px;
+			}
+
+			td {
+				width:1%;
+    			white-space:nowrap;
+				padding: 0 10px;
+				font-size: 12px;
+			}
+		}
+	}
+
+	&_termometer {
+		lost-column: 6/12;
+		margin: 20px 0 0;
+		&Item {
+			clear: both;
+			float: left;
+			margin-bottom: 20px;
+		}
+		&Box {
+			font-weight: 600;
+			border: 1px solid #fff;
+			border-radius: 30px;
+			padding: 10px;
+			box-sizing: border-box;
+			float: left;
+			height: 190px;
+			max-width: 95px;
+		}
+
+		&Ball {
+			width: 29px;
+			height: 29px;
+			border-radius: 50%;
+			background-color: #fff;
+			color: #000;
+			text-align: center;
+			padding-top: 7%;
+			float: left;
+			font-size: 11px;
+		}
+
+		&Square {
+			border-radius: 1px;
+		    left: -10px;
+		    top: 19px;
+		    padding: 0 13px;
+		    position: relative;
+			background-color: #fff;
+			text-align: center;
+			color: #000;
+			float: left;
+			font-size: 11px;
+		}
+
+		&List {
+			padding: 0;
+			margin-bottom: 20px;
+    		padding: 0;
+    		float: left;
+    		margin: 0 0 0 10px;
+
+			li {
+				padding: 27px 0 5px;
+    			font-size: 12px;
+			}
+		}
+	}
 }
 
-.Product_logo {
-	lost-column: 1/12;
-	position: relative;
-	top: 70px;
-	& img {
-		width: 100%;
+@media screen and (max-width: 768px) {
+	.Product {
+		&_description {
+			margin-top: 30px;
+			lost-column: 12/12;
+
+			&__info {
+				lost-column: 12/12;
+				lost-offset: 0;
+				margin-top: 20px;
+
+				&:before {
+					content: '';
+					height: 1px;
+					background-color: #fff;
+					width: 40px;
+					display: block;
+					margin: 0 auto 20px;
+				}
+			}
+		}
+
+		&_termometer {
+			lost-column: 12/12;
+		}
 	}
 }

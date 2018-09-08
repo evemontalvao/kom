@@ -1,0 +1,104 @@
+.Page {
+	&_bottle {
+		margin-top: 117px;
+		float: left;
+		lost-column: 1.5/12;
+		lost-offset: 0.5/12;
+	}
+
+	&_bottleImg {
+		width: 100%;
+	}
+	
+	&_Title {
+		lost-column: 1/12;
+		lost-offset: 2/12;
+		writing-mode: vertical-rl;
+		transform: rotate(-180deg);
+		margin: 0 auto;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-top: 370px;
+	}
+
+	&_subTitle {
+		font-size: 19px;
+		margin-top: 48px;
+
+	}
+
+	&_plant {
+		lost-column: 1.2/12;
+		lost-offset: .3/12;
+		text-align: center;
+		margin-top: 135px;
+		&Title {
+			writing-mode: vertical-rl;
+			transform: rotate(-180deg);
+			margin: 0 auto;
+			font-size: 18px;
+		}
+
+		&Img {
+			border-radius: 50%;
+			display: block;
+			max-width:100%;
+			max-height:140px;
+			width: auto;
+			height: auto;
+			margin: 0 0 20px;
+		}
+	}
+
+	&_sideTitle {
+		lost-column: 0.7/12;
+		writing-mode: vertical-rl;
+		transform: rotate(-180deg);
+		position: relative;
+		top: 290px;
+		font-size: 21px;
+	}
+
+	&_logo {
+		lost-column: 0.9/12;
+		position: relative;
+		top: 30px;
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Page {
+		&_sideTitle {
+			display: none;
+		}
+
+		&_logo {
+			lost-column: 4/12;
+			lost-offset: 1.8/12;
+		}
+
+		&_bottle {
+			lost-column: 2.4/12;
+			margin-top: 36px;
+		}
+
+		&_subTitle {
+			float: left;
+			font-size: 19px;
+			margin-top: 0;
+		}
+
+		&_Title {
+			lost-column: 1/12;
+			lost-offset: 2/12;
+			writing-mode: unset;
+			transform: rotate(0deg);
+			margin-top: 97px;	
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
+}

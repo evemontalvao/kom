@@ -1,0 +1,60 @@
+.Faq {
+	&_accordionWrapper {
+		margin-top: 105px;
+		lost-column: 6/12;
+	}
+
+	&_accordionTitle {
+		text-transform: uppercase;
+		padding: 0 0 7px;
+		margin: 0 0 15px;
+		border-bottom: 1px solid #fff;
+		cursor: pointer;
+
+		&.opened:after {
+			content: '-';
+			float: right;
+			font-size: 24px;
+		}
+
+		&.closed:after {
+			content: '+';
+			float: right;
+			font-size: 24px;
+			position: relative;
+			top: -5px;
+			cursor: pointer;
+		}
+	}
+
+	&_accordionContent {
+		margin: 0 0 20px;
+		display: none;
+
+		& active {
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Faq {
+		&_accordionWrapper {
+			margin-top: 60px;
+			lost-column: 10/12;
+			lost-offset: 1/12;
+		}
+
+		&_accordionTitle {
+			font-size: 12px;
+			text-transform: uppercase;
+			padding: 0 0 7px;
+			margin: 0 0 15px;
+			border-bottom: 1px solid #fff;
+			cursor: pointer;
+		}
+	}
+
+}
+
+

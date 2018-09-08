@@ -5,8 +5,9 @@ html, body {
 body {
 	background-color: $background;
 	color: $text;
-	padding: 15px 36px;
+	padding: 15px 36px 40px;
 	font-family: 'webfontregular';
+	letter-spacing: .6px;
 }
 
 .container {
@@ -20,4 +21,10 @@ a:visited,
 a:active { 
 	color: #fff; 
 	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding: 15px;
+	}
 }

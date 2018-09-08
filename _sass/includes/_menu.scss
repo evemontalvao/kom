@@ -1,7 +1,8 @@
 .Menu {
 	width: 100%;
 
-	&_listItem__wrapper {
+	&_icon {
+		display: none;
 	}
 
 	&_listItem {
@@ -38,6 +39,27 @@
 			content: "";
 			width: 100%;
 			background-color: $text;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Menu {
+		display: none;
+		&_listItem {
+			lost-column: 1/1;
+			display: block;
+			text-align: left;
+
+			&:after {
+				content: ""
+			}
+		}
+
+		&_icon {
+			display: block;
+			font-size: 21px;
+			cursor: pointer;
 		}
 	}
 }

@@ -1,0 +1,31 @@
+.Contact {
+	margin-top: 30px;
+	lost-column: 5/12;
+
+	&_input {
+		width: calc(100% - 6px);
+		border: none;
+		background: transparent;
+		border-bottom: 1px solid #fff;
+		color: $text;
+		outline: none;
+		margin: 7px 0 15px 6px;
+		border-radius: 0;
+		-webkit-appearance: none;
+  		-webkit-border-radius: 0px;
+
+		&:hover {
+			outline: none;
+		}
+	}
+
+	&_button {
+		lost-column: 2/12;
+		lost-offset: 10/12;
+	}
+
+	&_half {
+		lost-column: 6/12;
+		float: left;
+	}
+}
