@@ -11,6 +11,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+include: ['_pages']
 sass:
   style: compressed
   sass_dir: _sass

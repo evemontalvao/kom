@@ -2,7 +2,7 @@
 {
 	"layout": "faq",
 	"title": "FAQ",
-	"permalink": "/faq/",
+	"permalink": "/faq",
 	"fields": [
 		{
 			"type": "text",
