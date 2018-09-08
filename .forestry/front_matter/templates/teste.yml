@@ -1,0 +1,11 @@
+---
+label: teste
+hide_body: false
+is_partial: false
+fields:
+- type: select
+  config:
+    source:
+      type: simple
+  label: label
+  name: label
