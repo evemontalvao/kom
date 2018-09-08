@@ -1,0 +1,14 @@
+---
+label: Page
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: layout
+  name: layout
+- type: text
+  label: Teste
+  name: teste
+- type: file
+  name: garrafa
+  label: Garrafa
