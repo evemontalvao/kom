@@ -1,16 +1,10 @@
 ---
-{
-	"layout": "home",
-	"title": "home",
-	"fields": [
-		{
-			"type": "text",
-			"label": "Título da página",
-			"name": "title"
-		}
-	]
-}
+layout: faq
+title: FAQ
+fields:
+- type: text
+  label: Título da página
+  name: title
+
 ---
-
 {{page.title}}
-
