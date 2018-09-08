@@ -1,7 +1,8 @@
 ---
 {
-	"layout": "home",
-	"title": "home",
+	"layout": "faq",
+	"title": "FAQ",
+	"permalink": "/faq/",
 	"fields": [
 		{
 			"type": "text",
@@ -13,3 +14,4 @@
 ---
 
 {{page.title}}
+
