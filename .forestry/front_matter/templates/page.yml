@@ -12,5 +12,3 @@ fields:
 - type: file
   name: garrafa
   label: Garrafa
-pages:
-- faq.md
