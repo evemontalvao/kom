@@ -8,6 +8,7 @@
 		background: transparent;
 		border-bottom: 1px solid #fff;
 		color: $text;
+		font-size: $fontSize;
 		outline: none;
 		margin: 7px 0 15px 6px;
 		border-radius: 0;
@@ -28,4 +29,12 @@
 		lost-column: 6/12;
 		float: left;
 	}
+}
+
+@media screen and (max-width: 768px) {
+	.Contact {
+		lost-column: 10/12;
+		lost-offset: 1/12;
+	}
+	
 }

@@ -4,7 +4,11 @@
 <nav class="Menu">
 	<ul class="row Menu_list">
 		{% for item in site.menus.header %}
-		<li id="Menu_listItem__{{ loop.index }}" class="Menu_listItem"><a href="{{ item.url }}" class="Menu_listItem__link" title="Go to {{ item.title }}">{{ item.title }}</a></li>
+		<li id="Menu_listItem__{{ loop.index }}" class="Menu_listItem"><a href="{{ item.url }}" class="Menu_listItem__link" title="Go to {{ item.title }}">{{ item.title }}</a>
+			{% if item.children %}
+				teste
+			{% endif %}
+		</li>
 		{% endfor %}
 	</ul>
 </nav>

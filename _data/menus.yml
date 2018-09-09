@@ -1,14 +1,40 @@
 ---
-header:
-  - url: /api
-    title: Produtos
-    identifier: api
-  - url: /delivery
-    title: Delivery
-  - url: /parceiros
-    title: Parceiros
-  - url: /contatos
-    title: Contatos
-  - url: /faq
-    title: Faq
+{
+  "header": [
+    {
+      "url": "/produtos",
+      "title": "Produtos",
+      "children": [
+        {
+          "url": "melissa-officinalis",
+          "title": "Melissa Officinalis"
+        },
+        {
+          "url": "hibiscus-sabdariffa",
+          "title": "Hibiscus Sabdariffa"
+        },
+        {
+          "url": "schinus-terebinthifolius",
+          "title": "Schinus Terebinthifolius"
+        },
+      ]
+    },
+    {
+      "url": "/delivery",
+      "title": "Delivery"
+    },
+    {
+      "url": "/parceiros",
+      "title": "Parceiros"
+    },
+    {
+      "url": "/contato",
+      "title": "Contato"
+    },
+    {
+      "url": "/faq",
+      "title": "FAQ"
+    }
+  ]
+}
 ---
