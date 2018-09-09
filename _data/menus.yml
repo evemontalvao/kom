@@ -1,14 +1,18 @@
 ---
 header:
-  - url: /api
-    title: Produtos
-    identifier: api
-  - url: /delivery
-    title: Delivery
-  - url: /parceiros
-    title: Parceiros
-  - url: /contatos
-    title: Contatos
-  - url: /faq
-    title: Faq
----
+- url: "/faq"
+  title: Faq
+  weight: 1
+- url: "/contatos"
+  title: Contatos
+  weight: 2
+- url: "/parceiros"
+  title: Parceiros
+  weight: 3
+- url: "/delivery"
+  title: Delivery
+  weight: 4
+- url: "/api"
+  title: Produtos
+  identifier: api
+  weight: 5
