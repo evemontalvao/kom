@@ -12,3 +12,6 @@ fields:
     - aa
   label: label
   name: label
+- type: text
+  name: single_input
+  label: single input
