@@ -11,6 +11,7 @@
 		lost-column: 1.3/12;
 		text-transform: uppercase;
 		text-align: center;
+		position: relative;
 
 		&:after {
 			content: "|";
@@ -19,6 +20,47 @@
 
 		&:last-child:after {
 			content: "";
+		}
+
+		&:hover .Menu_submenu {
+			height: auto;
+			opacity: 1;
+			display: block;
+			transition: all .9 linear;
+		}
+
+	}
+
+	&_submenu {
+		display: none;
+		padding: 10px 25px;
+		background-color: #000;
+		z-index: 2;
+		position: absolute;
+		height: 0;
+		opacity: 0;
+		transition: all .9 linear;
+
+		&:before {
+			content: "";
+			float: left;
+			width: 100%;
+			background-color: $text;
+		}
+
+		& .Menu_listItem {
+			clear: both;
+			display: block;
+			margin: 0 0 7px;
+
+			&:after {
+				content: "";
+			}
+		}
+
+		& .Menu_listItem__link {
+			text-align: left;
+			font-size: 14px;
 		}
 	}
 

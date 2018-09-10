@@ -4,10 +4,12 @@
     {
       "url": "/produtos",
       "title": "Produtos",
-      "children": [
+      "identifier": "produtos",
+      "submenu": [
         {
           "url": "melissa-officinalis",
-          "title": "Melissa Officinalis"
+          "title": "Melissa Officinalis",
+          "menus": "produtos"
         },
         {
           "url": "hibiscus-sabdariffa",
@@ -16,7 +18,7 @@
         {
           "url": "schinus-terebinthifolius",
           "title": "Schinus Terebinthifolius"
-        },
+        }
       ]
     },
     {

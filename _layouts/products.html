@@ -2,11 +2,11 @@
 layout: page
 ---
 <div class="Product_description">
-	<div class="Product_description__highlight">Possui um sabor e aroma característico, frutado, limão, ácido e cítrico</div>
-	<p class="Product_description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ex delectus saepe debitis impedit</p>
+	<div class="Product_description__highlight">{{highlight}}</div>
+	<p class="Product_description__text">{{description}}</p>
 	<div class="Product_description__info">
-		<div class="Product_description__infoTitle">Informação Nutricional</div>
-		<div class="Product_description__infoSubtitle">Porção de 300ml (1 garrafa)</div>
+		<div class="Product_description__infoTitle">{{infoTittle}}</div>
+		<div class="Product_description__infoSubtitle">{{infoSubtitle}}</div>
 		<table class="Product_description__infoTable">
 			<tr>
 				<th></th>
@@ -15,18 +15,18 @@ layout: page
 			</tr>
 			<tr>
 				<td>Valor energético</td>
-				<td>72Kcal = 302kJ</td>
-				<td>4%</td>
+				<td>{{energeticValueQtd}}</td>
+				<td>{{energeticValueVd}}</td>
 			</tr>
 			<tr>
 				<td>Carboidratos</td>
-				<td>18g</td>
-				<td>6%</td>
+				<td>{{carbosQtd}}</td>
+				<td>{{carbosVd}}</td>
 			</tr>
 			<tr>
 				<td>Sódio</td>
-				<td>8mg</td>
-				<td>0%</td>
+				<td>{{sodioQtd}}</td>
+				<td>{{sodioVd}}</td>
 			</tr>
 		</table>
 	</div>
@@ -37,7 +37,7 @@ layout: page
 					pH
 				</div>
 				<div class="Product_termometerSquare">
-					4,3
+					{{ph}}
 				</div>
 			</div>
 			<div class="Product_termometerItem">
@@ -45,7 +45,7 @@ layout: page
 					pH
 				</div>
 				<div class="Product_termometerSquare">
-					4,3
+					{{brix}}
 				</div>
 			</div>
 			<div class="Product_termometerItem">
@@ -53,7 +53,7 @@ layout: page
 					pH
 				</div>
 				<div class="Product_termometerSquare">
-					4,3
+					{{abv}}
 				</div>
 			</div>
 		</div>

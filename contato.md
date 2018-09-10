@@ -43,7 +43,7 @@
 }
 ---
 
-<form action="/email.php" name="contact_form" method="post" class="Contact">
+<form action="https://formspree.io/evemontalvao@gmail.com" name="contact_form" method="POST" class="Contact">
 	{% for field in page.fields %}
 			
 			{% if field.config.options %}
@@ -61,6 +61,7 @@
 	{% endfor %}
 
 	<input type="submit" value="Enviar" class="Contact_input Contact_button">
+	<input type="hidden" name="_next" value="{{site.url}}/success" />
 </form>
 
 
