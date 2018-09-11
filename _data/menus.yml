@@ -2,21 +2,21 @@
 {
   "header": [
     {
-      "url": "/produtos",
+      "url": "javascript:void(0)",
       "title": "Produtos",
       "identifier": "produtos",
       "submenu": [
         {
-          "url": "melissa-officinalis",
+          "url": "/produtos/melissa-officinalis",
           "title": "Melissa Officinalis",
           "menus": "produtos"
         },
         {
-          "url": "hibiscus-sabdariffa",
+          "url": "/produtos/hibiscus-sabdariffa",
           "title": "Hibiscus Sabdariffa"
         },
         {
-          "url": "schinus-terebinthifolius",
+          "url": "/produtos/schinus-terebinthifolius",
           "title": "Schinus Terebinthifolius"
         }
       ]

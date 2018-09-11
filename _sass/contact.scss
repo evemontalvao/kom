@@ -1,9 +1,69 @@
 .Contact {
 	margin-top: 30px;
 	lost-column: 5/12;
+	
+	&_label {
+		float: left;
+		clear: both;
+		width: 100%;
+		margin-left: 8px;
+		margin-bottom: 10px;
+	}
+
+	&_inputNumber {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+		padding: 5px;
+		width: 30px;
+		margin-left: 3px;
+		float: left;
+	}
+
+	&_inputNumber__buttons {
+		float: left;
+		padding-left: 3px;
+	}
+
+	&_inputNumber__button {
+		width: 15px;
+		font-size: 9px;
+		text-align: center;
+		border: 1px solid #fff;
+		cursor: pointer;
+	}
+
+	&_productLabel {
+		float: left;
+		margin-left: 6px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	&_columnTiny {
+		float: right;
+
+		& label {
+			float: left;
+			margin-top: 7px;
+		}
+	}
+
+	&_column1 {
+		lost-column: 12/12;
+		float: left;
+		padding: 0 3px;
+	}
+
+	&_column2 {
+		lost-column: 6/12;
+		float: left;
+		padding: 0 3px;
+	}
 
 	&_input {
-		width: calc(100% - 6px);
+		width: 100%;
 		border: none;
 		background: transparent;
 		border-bottom: 1px solid #fff;
@@ -13,16 +73,23 @@
 		margin: 7px 0 15px 6px;
 		border-radius: 0;
 		-webkit-appearance: none;
-  		-webkit-border-radius: 0px;
+		-webkit-border-radius: 0px;
 
 		&:hover {
 			outline: none;
 		}
 	}
 
+
+
 	&_button {
 		lost-column: 2/12;
 		lost-offset: 10/12;
+
+		&:disabled {
+			color: #aaa;
+			cursor: not-allowed;
+		}
 	}
 
 	&_half {
@@ -33,8 +100,25 @@
 
 @media screen and (max-width: 768px) {
 	.Contact {
-		lost-column: 10/12;
-		lost-offset: 1/12;
+		lost-column: 12/12;
+
+		&_column2 {
+			lost-column: 12/12;
+		}
+
+		&_productLabel {
+			margin-bottom: 28px;
+		}
+
+		&_inputNumber {
+			margin-top: 15px;
+		}
+		&_inputNumber__button {
+			width: 24px;
+    		padding: 4px;
+		}
 	}
+
+
 	
 }

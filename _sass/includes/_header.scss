@@ -23,8 +23,9 @@
 
 	&_bottleContainer {
 		position: relative;
-		top: 305px;
-		lost-column: 1/12;
+		top: 295px;
+    	float: left;
+    	width: 115px;
 		lost-offset: .5/12;
 
 		& img {
