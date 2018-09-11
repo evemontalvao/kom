@@ -8,17 +8,20 @@
 		{
 			"type": "text",
 			"name": "name",
-			"label": "Nome"
+			"label": "Nome",
+			"data": "data-contato-name",
 		},
 		{
 			"type": "email",
 			"name": "email",
-			"label": "Email"
+			"label": "Email",
+			"data": "data-contato-email",
 		},
 		{
 			"type": "text",
 			"name": "phone",
-			"label": "Celular"
+			"label": "Celular",
+			"data": "data-contato-phone"
 		},
 		{
 			"type": "select",
@@ -43,7 +46,7 @@
 }
 ---
 
-<form action="https://formspree.io/evemontalvao@gmail.com" name="contact_form" method="POST" class="Contact">
+<form action="https://formspree.io/evemontalvao@gmail.com" name="contact_form" method="POST" class="Contact" data-fade-fast>
 	{% for field in page.fields %}
 			
 			{% if field.config.options %}
@@ -56,7 +59,7 @@
 				{% elsif field.type == "textarea" %}
 					<textarea rows="10" class="Contact_input" name="{{field.name}}" placeholder="{{field.label}}"></textarea>
 				{% else %}
-				<input type="text" class="Contact_input" name="{{field.type}}" type="{{field.type}}" placeholder="{{field.name}}">
+				<input type="text" class="Contact_input" name="{{field.type}}" {{field.data}} type="{{field.type}}" placeholder="{{field.name}}">
 			{% endif %}
 	{% endfor %}
 

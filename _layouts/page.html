@@ -3,19 +3,19 @@ layout: default
 ---
 {% include menu.html %}
 <div class="Page">
-	<div class="Page_sideTitle">KOMBUCHA</div>
-	<div class="Page_logo"><img src="{{site.url}}/assets/img/logo.png" alt=""></div>
+	<div class="Page_sideTitle" data-fade-fast>KOMBUCHA</div>
+	<div class="Page_logo" data-fade-fast><a href="{{site.url}}"><img src="{{site.url}}/assets/img/logo.png" alt=""></a></div>
 	{% if page.bottle_image %}
-	<div class="Page_bottle"><img src="{{site.url}}/assets/img/{{page.bottle_image}}" alt="" class="Page_bottleImg"></div>
+	<div class="Page_bottle" data-fade-slow><img src="{{site.url}}/assets/img/{{page.bottle_image}}" alt="" class="Page_bottleImg"></div>
 	{% endif %}
 	{% if page.plant_image %}
-	<div class="Page_plant">
+	<div class="Page_plant" data-fade-medium>
 		<img src="{{site.url}}/assets/img/{{page.plant_image}}" alt="" class="Page_plantImg">
 		<h2 class="Page_plantTitle">{{page.title}}</h2>
 	</div>
 	{% else %}
-	<h2 class="Page_Title">{{page.title}}</h2>
-	<div class="Page_subTitle">{{page.subtitle}}</div>
+	<h2 class="Page_Title" data-fade-fast>{{page.title}}</h2>
+	<div class="Page_subTitle" data-fade-fast>{{page.subtitle}}</div>
 	{% endif %}
 </div>
 

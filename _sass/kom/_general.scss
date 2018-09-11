@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-	lost-center: 100%;
+	lost-center: 1366px;
+	margin: 0 auto;
 	height: inherit;
 }
 
@@ -21,6 +22,43 @@ a:visited,
 a:active { 
 	color: #fff; 
 	text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+		outline: none;
+
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+[data-fade-fast] {
+	transition: all .5s linear;
+}
+
+[data-fade-medium] {
+	transition: all 1s linear;
+}
+
+[data-fade-slow] {
+	transition: all 1.5s linear;
+}
+
+[data-fade-fast],
+[data-fade-slow],
+[data-fade-medium] {
+	opacity: 0;
+}
+
+.elementsShow {
+	opacity: 1;
+
 }
 
 @media screen and (max-width: 768px) {

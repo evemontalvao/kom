@@ -5,9 +5,21 @@
 	"permalink": "/faq",
 	"fields": [
 		{
-			"type": "text",
-			"label": "Título da página",
-			"name": "title"
+			type: "field_group_list",
+			"name": "repeater",
+			"label": "repeater",
+			"fields": [
+				{
+					"type": "text",
+					"name": "question",
+					"label": "Pergunta",
+				},
+				{
+					"type": "text",
+					"name": "answer",
+					"label": "Resposta",
+				},
+			]
 		}
 	]
 }

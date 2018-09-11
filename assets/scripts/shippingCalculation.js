@@ -266,9 +266,13 @@
 
   class ShippingCalculator {
     constructor(elem) {
+      console.log('here')
       this.$elem = $(elem)
       this.$input = this.$elem.find('[data-shipping-cep]')
       this.$result = this.$elem.find('[data-shipping-result]')
+      this.$submit = this.$elem.find('[data-shipping-submit]')
+      this.$street = this.$elem.find('[data-shipping-street]')
+      this.$neighbourhood = this.$elem.find('[data-shipping-neighbourhood]')
 
       this.CITIES = Object.keys(CITIES)
 
@@ -279,13 +283,15 @@
     initWithKnowCep() {
       const cost = localStorage.getItem('shippingCost')
       if (cost) {
-        this.$input.val(localStorage.getItem('cep'))
-        return this.result(cost)
+        let cepInfo = JSON.parse(localStorage.getItem('cep_info'))
+
+        this.$input.val(cepInfo.cep)
+        return this.result(cost, cepInfo)
       }
     }
 
     listeners() {
-      this.$elem.on('submit', $.proxy(this, 'getCep'))
+      this.$input.on('blur', $.proxy(this, 'getCep'))
     }
 
     getCep(e) {
@@ -299,26 +305,30 @@
       $.get(`https://viacep.com.br/ws/${value}/json/`, $.proxy(this, 'cepGetted'))
     }
 
-    cepGetted(res) {      
+    cepGetted(res) {     
       if(res.erro || !res) return this.result()
       if(this.CITIES.indexOf(res.localidade) === -1) return this.result()
 
       let city = CITIES[res.localidade]
       let neighborhood = city.neighborhoods[res.bairro]
 
-      localStorage.setItem('cep', res.cep)
+      localStorage.setItem('cep_info', JSON.stringify(res))
 
-      if (neighborhood) return this.result(neighborhood)
+      if (neighborhood) return this.result(neighborhood, res)
 
-      return this.result(city.price)
+      return this.result(city.price, res)
     }
 
-    result(value) {
+    result(value, info) {
+      console.log(info)
       if (!value) {
         return this.$result.html('Nós ainda não entregamos nessa região. :(')
       }
 
+      this.$submit.removeAttr('disabled')
       localStorage.setItem('shippingCost', value)
+      this.$street.val(info.logradouro)
+      this.$neighbourhood.val(info.bairro)
 
       return this.$result.html(
         `O valor da entrega para sua região é R$ ${value},00.`

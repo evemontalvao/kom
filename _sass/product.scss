@@ -7,7 +7,9 @@
 
 		&__highlight {
 			float: inherit;
-			font-size: 18px;
+			font-size: 1.07rem;
+			clear: both;
+			width: 100%;
 		}
 
 		&__text {
@@ -53,6 +55,20 @@
 				padding: 0 10px;
 				font-size: 12px;
 			}
+		}
+
+		&__sub {
+			font-size: 14px;
+			margin-top: 10px;
+			float: left;
+		}
+
+		&__gluten {
+			float: left;
+			margin-left: 40px;
+			margin-top: 8px;
+			text-transform: uppercase;
+			font-weight: 500;
 		}
 	}
 
