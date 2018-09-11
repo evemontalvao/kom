@@ -1,12 +1,13 @@
 ---
 layout: page
 ---
+
 <div class="Product_description">
-	<div class="Product_description__highlight">{{highlight}}</div>
-	<p class="Product_description__text">{{description}}</p>
+	<div class="Product_description__highlight">{{page.highlight}}</div>
+	<p class="Product_description__text">{{page.description}}</p>
 	<div class="Product_description__info">
-		<div class="Product_description__infoTitle">{{infoTittle}}</div>
-		<div class="Product_description__infoSubtitle">{{infoSubtitle}}</div>
+		<div class="Product_description__infoTitle">{{page.infoTittle}}</div>
+		<div class="Product_description__infoSubtitle">{{page.infoSubtitle}}</div>
 		<table class="Product_description__infoTable">
 			<tr>
 				<th></th>
@@ -15,18 +16,18 @@ layout: page
 			</tr>
 			<tr>
 				<td>Valor energético</td>
-				<td>{{energeticValueQtd}}</td>
-				<td>{{energeticValueVd}}</td>
+				<td>{{page.energeticValueQtd}}</td>
+				<td>{{page.energeticValueVd}}</td>
 			</tr>
 			<tr>
 				<td>Carboidratos</td>
-				<td>{{carbosQtd}}</td>
-				<td>{{carbosVd}}</td>
+				<td>{{page.carbosQtd}}</td>
+				<td>{{page.carbosVd}}</td>
 			</tr>
 			<tr>
 				<td>Sódio</td>
-				<td>{{sodioQtd}}</td>
-				<td>{{sodioVd}}</td>
+				<td>{{page.sodioQtd}}</td>
+				<td>{{page.sodioVd}}</td>
 			</tr>
 		</table>
 	</div>
@@ -37,7 +38,7 @@ layout: page
 					pH
 				</div>
 				<div class="Product_termometerSquare">
-					{{ph}}
+					{{page.ph}}
 				</div>
 			</div>
 			<div class="Product_termometerItem">
@@ -45,7 +46,7 @@ layout: page
 					pH
 				</div>
 				<div class="Product_termometerSquare">
-					{{brix}}
+					{{page.brix}}
 				</div>
 			</div>
 			<div class="Product_termometerItem">
@@ -53,7 +54,7 @@ layout: page
 					pH
 				</div>
 				<div class="Product_termometerSquare">
-					{{abv}}
+					{{page.abv}}
 				</div>
 			</div>
 		</div>
