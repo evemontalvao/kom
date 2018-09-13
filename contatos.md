@@ -5,7 +5,6 @@ permalink: "/parceiros"
 subtitle: Alguma dúvida, crítica ou sugestão? Manda pra gente!
 date: 2018-09-13 20:53:08 +0000
 fields:
-- {}
 - name: name
   size: 1
   label: Nome
