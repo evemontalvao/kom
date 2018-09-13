@@ -14,6 +14,27 @@ fields:
 - name: nome_fantasia
   size: 1
   label: Nome Fantasia
+- name: nome_responsavel
+  size: 1
+  label: Nome Responsável
+- name: email
+  size: 1
+  label: Email
+- name: telefone
+  label: Telefone
+  size: 2
+- name: cep
+  size: 2
+  label: CEP
+- size: 1
+  label: Logradouro
+  name: logradouro
+- name: numero
+  size: 2
+  label: Número
+- name: complemento
+  size: 2
+  label: Complemento
 published: false
 
 ---
