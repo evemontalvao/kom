@@ -13,6 +13,9 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: text
+  label: Subtítulo
+  name: subtitle
 - type: field_group_list
   name: questions
   label: Perguntas
