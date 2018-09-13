@@ -22,5 +22,3 @@ fields:
   - type: text
     name: option
     label: option
-pages:
-- testee.md
