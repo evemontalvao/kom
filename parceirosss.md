@@ -11,6 +11,9 @@ fields:
 - name: inscricao_estadual
   size: 1
   label: Inscrição Estadual
+- name: nome_fantasia
+  size: 1
+  label: Nome Fantasia
 published: false
 
 ---
