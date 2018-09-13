@@ -36,3 +36,5 @@ fields:
   - type: text
     label: Placeholder
     name: label
+pages:
+- parceiros.md
