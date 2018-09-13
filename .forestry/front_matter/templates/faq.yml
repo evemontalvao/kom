@@ -16,5 +16,14 @@ fields:
 - type: field_group_list
   name: fields
   label: Adicionar pergunta/resposta
+  fields:
+  - type: text
+    label: Pergunta
+    name: question
+    description: Insira a pergunta
+  - type: text
+    name: answer
+    label: Resposta
+    description: Insira a resposta
 pages:
 - testeeeeeee.md
