@@ -1,5 +1,5 @@
 ---
-title: Contatos
+title: Contato
 layout: page
 permalink: "/contato"
 subtitle: Alguma dúvida, crítica ou sugestão? Manda pra gente!
@@ -14,7 +14,6 @@ fields:
 - name: telefone
   size: 1
   label: Telefone
-published: false
 
 ---
 <form action="email_contato.php" name="contact_form" method="POST" class="Contact" data-fade-fast>
