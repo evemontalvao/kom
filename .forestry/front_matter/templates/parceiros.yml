@@ -16,8 +16,8 @@ fields:
 - name: permalink
   label: Permalink
   type: text
-  hidden: true
-  default: "/parceiros"
+  hidden: false
+  default: ''
 - name: subtitle
   label: Subtitle
   type: text
@@ -37,4 +37,5 @@ fields:
     label: Placeholder
     name: label
 pages:
+- contatos.md
 - parceiros.md
