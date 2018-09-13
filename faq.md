@@ -7,9 +7,18 @@ questions:
   answer: Teste.
 
 ---
-{{page}}
+<div class="Faq_accordionWrapper" data-accordion>
 
-{% for item in page.questions %}  
-{{item}}
+	{% for item in page.questions %}
 
-{% endfor %}
+	<div class="Faq_accordion">
+
+			<div class="Faq_accordionTitle closed" data-accordion-item-title>{{item.question}}</div>
+
+			<div class="Faq_accordionContent" data-accordion-item-content>{{item.answer}}</div>
+
+	</div>
+
+	{% endfor %}
+
+</div>
