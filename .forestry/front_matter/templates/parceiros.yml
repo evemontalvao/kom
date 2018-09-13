@@ -16,7 +16,7 @@ fields:
 - name: permalink
   label: Permalink
   type: text
-  hidden: true
+  hidden: false
   default: "/parceiros"
 - name: subtitle
   label: Subtitle
