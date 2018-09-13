@@ -13,6 +13,9 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: text
+  label: Subtítulo
+  name: subtitle
 - type: field_group_list
   name: questions
   label: Perguntas
@@ -26,4 +29,5 @@ fields:
     label: Resposta
     description: Insira a resposta aqui
 pages:
+- faq-1.md
 - faq.md
