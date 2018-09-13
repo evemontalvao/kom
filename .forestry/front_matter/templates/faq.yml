@@ -1,0 +1,30 @@
+---
+label: FAQ
+hide_body: false
+is_partial: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: faq
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- type: field_group_list
+  name: fields
+  label: Adicionar pergunta/resposta
+  fields:
+  - type: text
+    label: Pergunta
+    name: question
+    description: Insira a pergunta
+  - type: text
+    name: answer
+    label: Resposta
+    description: Insira a resposta
+  description: jhdajhda
+pages:
+- testeeeeeee.md
