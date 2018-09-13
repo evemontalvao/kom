@@ -37,13 +37,7 @@ fields:
       hidden: false
       default: cnpj
     - type: text
-      label: data
-      name: data
-      default: data-partner-cnpj
-      hidden: true
-    - type: text
       label: size
       name: size
       default: '1'
-      hidden: true
-    - type: text
+      hidden: false
