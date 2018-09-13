@@ -12,8 +12,11 @@
 
 		&.opened:after {
 			content: '-';
-			float: right;
+			margin: 0 15px 0 0;
+			float: left;
 			font-size: 24px;
+			position: relative;
+    		top: -6px;
 		}
 
 		&.closed:after {
@@ -30,9 +33,12 @@
 	&_accordionContent {
 		margin: 0 0 20px;
 		display: none;
+		height: 0;
+		transition: all .5s linear;
 
-		& active {
+		&.active {
 			display: block;
+			height: auto;
 		}
 	}
 }

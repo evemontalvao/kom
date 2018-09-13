@@ -266,13 +266,12 @@
 
   class ShippingCalculator {
     constructor(elem) {
-      console.log('here')
       this.$elem = $(elem)
       this.$input = this.$elem.find('[data-shipping-cep]')
       this.$result = this.$elem.find('[data-shipping-result]')
       this.$submit = this.$elem.find('[data-shipping-submit]')
-      this.$street = this.$elem.find('[data-shipping-street]')
-      this.$neighbourhood = this.$elem.find('[data-shipping-neighbourhood]')
+      this.$street = this.$elem.find('[data-shipping-logradouro]')
+      this.$neighbourhood = this.$elem.find('[data-shipping-bairro]')
 
       this.CITIES = Object.keys(CITIES)
 
@@ -320,7 +319,6 @@
     }
 
     result(value, info) {
-      console.log(info)
       if (!value) {
         return this.$result.html('Nós ainda não entregamos nessa região. :(')
       }

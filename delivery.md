@@ -1,7 +1,7 @@
 ---
 title: Delivery
 layout: page
-subtitle: Seja nosso parceiro, preencha os dados e retornaremos seu contato.
+subtitle: Receba a KOM na porta da sua casa.<br>Somente para grande São Paulo.
 date: 2018-09-13 21:35:55 +0000
 permalink: "/delivery"
 fields:
@@ -37,7 +37,7 @@ fields:
 
 	<div class="Contact_column{{field.size}}">
 
-		<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" {{field.data}} placeholder="{{field.label}}">
+		<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" data-shipping-{{field.name}} placeholder="{{field.label}}">
 
 	</div>
 

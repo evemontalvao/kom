@@ -1,7 +1,7 @@
-<div class="Menu_icon">
+<div class="Menu_icon" data-menu-icon>
 	<i class="fas fa-ellipsis-v"></i>
 </div>
-<nav class="Menu">
+<nav class="Menu" data-menu>
 	<ul class="row Menu_list">
 		{% for item in site.menus.header %}
 		<li id="Menu_listItem__{{ loop.index }}" data-fade-fast class="Menu_listItem"><a href="{{ item.url }}" class="Menu_listItem__link" title="Go to {{ item.title }}">{{ item.title }}</a>

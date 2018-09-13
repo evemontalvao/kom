@@ -90,6 +90,24 @@
 @media screen and (max-width: 768px) {
 	.Menu {
 		display: none;
+		position: absolute;
+		z-index: 1;
+		height: 0;
+		display: block;
+		overflow: hidden;
+		background-color: #000;
+		transition: all .4s linear;
+
+		&_submenu {
+			margin-left: 100px;
+    		top: 6px;
+		}
+
+		&.active {
+			height: 112px;
+			display: block;
+		}
+		
 		&_listItem {
 			lost-column: 1/1;
 			display: block;
