@@ -7,3 +7,7 @@ questions:
   answer: Teste.
 
 ---
+{% for item in page.questions %}  
+{{item}}
+
+{% endfor %}
