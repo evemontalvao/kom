@@ -41,3 +41,5 @@ fields:
       name: size
       default: '1'
       hidden: false
+pages:
+- parceirosss.md
