@@ -5,17 +5,18 @@ permalink: "/parceiros"
 subtitle: Seja nosso parceiro, preencha os dados e retornaremos seu contato.
 date: 2018-09-13 19:04:29 +0000
 fields:
-- {}
+- name: cnpj
+  size: 1
 published: false
 
 ---
-<form action="email_parceiros.php" data-partner name="contact_form" method="POST" class="Contact" data-fade-medium>
+<form action="email_parceiros.php" data-partners name="contact_form" method="POST" class="Contact" data-fade-medium>
 
 	{% for field in page.fields %}	
 
 		<div class="Contact_column{{field.size}}">
 
-			<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" {{field.data}} placeholder="{{field.label}}">
+			<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" data-partner-{{field.name}} placeholder="{{field.label}}">
 
 		</div>
 
