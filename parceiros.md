@@ -35,7 +35,7 @@ fields:
 - name: complemento
   label: Complemento
   size: 2
-published: true
+
 ---
 <form action="email_parceiros.php" data-partners name="contact_form" method="POST" class="Contact" data-fade-medium>
 
