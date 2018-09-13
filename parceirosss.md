@@ -1,5 +1,5 @@
 ---
-title: parceirosss
+title: Parceiros
 layout: page
 permalink: "/parceiros"
 subtitle: Seja nosso parceiro, preencha os dados e retornaremos seu contato.
@@ -7,34 +7,6 @@ date: 2018-09-13 19:04:29 +0000
 fields:
 - name: cnpj
   size: 1
-  label: CNPJ
-- name: inscricao_estadual
-  size: 1
-  label: Inscrição Estadual
-- name: nome_fantasia
-  size: 1
-  label: Nome Fantasia
-- name: nome_responsavel
-  size: 1
-  label: Nome Responsável
-- name: email
-  size: 1
-  label: Email
-- name: telefone
-  label: Telefone
-  size: 2
-- name: cep
-  size: 2
-  label: CEP
-- size: 1
-  label: Logradouro
-  name: logradouro
-- name: numero
-  size: 2
-  label: Número
-- name: complemento
-  size: 2
-  label: Complemento
 published: false
 
 ---
