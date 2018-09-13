@@ -6,6 +6,5 @@ subtitle: ''
 questions:
 - question: Teste?
   answer: Teste.
-published: false
 
 ---
