@@ -7,7 +7,6 @@ date: 2018-09-13 19:04:29 +0000
 fields:
 - name: cnpj
   size: 1
-published: false
 
 ---
 <form action="email_parceiros.php" data-partners name="contact_form" method="POST" class="Contact" data-fade-medium>
