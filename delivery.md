@@ -37,7 +37,7 @@ fields:
     
     <div class="Contact_column{{field.size}}">
     
-    	<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" data-shipping-{{field.data}} placeholder="{{field.label}}">
+    	<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" data-shipping-{{field.name}} placeholder="{{field.label}}">
     
     </div>
     
