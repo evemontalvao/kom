@@ -7,6 +7,7 @@ date: 2018-09-13 19:04:29 +0000
 fields:
 - name: cnpj
   size: 1
+  label: CNPJ
 - name: inscricao_estadual
   size: 1
   label: Inscrição Estadual
