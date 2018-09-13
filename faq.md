@@ -7,6 +7,8 @@ questions:
   answer: Teste.
 
 ---
+{{page}}
+
 {% for item in page.questions %}  
 {{item}}
 
