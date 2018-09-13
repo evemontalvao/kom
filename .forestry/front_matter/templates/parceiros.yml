@@ -37,4 +37,5 @@ fields:
     label: Placeholder
     name: label
 pages:
+- contatos.md
 - parceiros.md
