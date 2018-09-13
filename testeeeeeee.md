@@ -8,3 +8,4 @@ fields:
 published: false
 
 ---
+{{page.fields}}
