@@ -58,3 +58,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- testeeeeeee.md
