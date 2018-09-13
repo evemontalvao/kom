@@ -1,28 +1,9 @@
 ---
-{
-	"layout": "faq",
-	"title": "FAQ",
-	"permalink": "/faq",
-	"fields": [
-		{
-			type: "field_group_list",
-			"name": "repeater",
-			"label": "repeater",
-			"fields": [
-				{
-					"type": "text",
-					"name": "question",
-					"label": "Pergunta",
-					"value": "Insira a pergunta aqui"
-				},
-				{
-					"type": "text",
-					"name": "answer",
-					"label": "Resposta",
-					"value": "Insira a resposta aqui"
-				},
-			]
-		}
-	]
-}
+title: FAQ
+layout: faq
+date: 2018-09-13 20:11:58 +0000
+questions:
+- question: Teste?
+  answer: Teste.
+
 ---

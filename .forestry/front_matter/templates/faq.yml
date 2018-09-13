@@ -14,15 +14,16 @@ fields:
   hidden: false
   default: ''
 - type: field_group_list
-  name: fields
-  label: Adicionar pergunta/resposta
+  name: questions
+  label: Perguntas
   fields:
   - type: text
-    label: Pergunta
     name: question
-    description: Insira a pergunta
+    label: Pergunta
+    description: Insira a pergunta aqui
   - type: text
     name: answer
     label: Resposta
-    description: Insira a resposta
-  description: jhdajhda
+    description: Insira a resposta aqui
+pages:
+- faq.md
