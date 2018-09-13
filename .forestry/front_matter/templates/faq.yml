@@ -1,20 +1,15 @@
 ---
 label: FAQ
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: faq
 - name: title
   label: Title
-  type: text
-  hidden: false
-  default: ''
-- name: permalink
-  label: Permalink
   type: text
   hidden: false
   default: ''
@@ -25,48 +20,39 @@ fields:
   - name: type
     label: Type
     type: text
-    hidden: false
-    default: ''
+    hidden: true
+    default: field_group_list
   - name: name
     label: Name
     type: text
-    hidden: false
-    default: ''
+    hidden: true
+    default: repeater
   - name: label
     label: Label
     type: text
-    hidden: false
-    default: ''
-  - name: fields
-    label: Fields
-    type: field_group_list
+    hidden: true
+    default: repeater
+  - type: field_group_list
     fields:
-    - name: type
-      label: Type
-      type: text
-      hidden: false
-      default: ''
-    - name: name
-      label: Name
-      type: text
-      hidden: false
-      default: ''
-    - name: label
-      label: Label
-      type: text
-      hidden: false
-      default: ''
-    hidden: false
-    default: ''
+    - type: field_group_list
+      fields:
+      - type: text
+        label: Pergunta
+        name: question
+        description: Insira uma resposta
+      - type: text
+        name: answer
+        label: Resposta
+        description: Insira uma resposta
   - name: data
     label: Data
     type: text
-    hidden: false
+    hidden: true
     default: ''
   - name: size
     label: Size
     type: text
-    hidden: false
+    hidden: true
     default: ''
   hidden: false
   default: ''
