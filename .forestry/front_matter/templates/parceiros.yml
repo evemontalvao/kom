@@ -27,19 +27,11 @@ fields:
   name: fields
   label: Campos
   fields:
-  - type: field_group_list
-    label: Campo
-    name: field
-    fields:
-    - type: text
-      label: name
-      name: name
-      hidden: false
-      default: cnpj
-    - type: text
-      label: size
-      name: size
-      default: '1'
-      hidden: false
+  - type: text
+    name: name
+    label: Nome
+  - type: text
+    label: Colunas
+    name: size
 pages:
 - parceirosss.md
