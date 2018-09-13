@@ -28,5 +28,3 @@ fields:
     name: answer
     label: Resposta
     description: Insira a resposta aqui
-pages:
-- faq-1.md
