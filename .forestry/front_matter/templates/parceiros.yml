@@ -36,12 +36,6 @@ fields:
   - type: text
     label: Placeholder
     name: label
-  - type: select
-    config:
-      source:
-        type: datafiles
-    label: Seletor
-    name: select
 pages:
 - contatos.md
 - parceiros.md
