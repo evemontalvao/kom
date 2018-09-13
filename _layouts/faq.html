@@ -2,14 +2,3 @@
 layout: page
 ---
 {{content}}
-<div class="Faq_accordionWrapper" data-accordion>
-	{% for item in page.questions %}
-	<div class="Faq_accordion">
-		{% if item.name == "question" %}
-			<div class="Faq_accordionTitle closed" data-accordion-item-title>{{item.value}}</div>
-		{% elsif item.name == "answer" %}
-			<div class="Faq_accordionContent" data-accordion-item-content>{{item.value}}</div>
-		{% endif %}
-	</div>
-	{% endfor %}
-</div>
