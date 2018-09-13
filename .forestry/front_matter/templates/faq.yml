@@ -44,6 +44,8 @@ fields:
         name: answer
         label: Resposta
         description: Insira uma resposta
+      label: Adicionar pergunta/resposta
+      name: adicionar_pergunta/resposta
   - name: data
     label: Data
     type: text
