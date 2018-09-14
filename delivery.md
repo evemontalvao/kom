@@ -29,6 +29,7 @@ fields:
 - name: complemento
   size: 2
   label: Complemento
+published: false
 
 ---
 <form action="email_pedidos.php" data-shipping name="contact_form" method="POST" class="Contact" data-fade-medium>
