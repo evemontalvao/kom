@@ -32,8 +32,8 @@ fields:
 
 ---
 <form action="email_pedidos.php" data-shipping name="contact_form" method="POST" class="Contact" data-fade-medium>
-    {% for field in page.fields %}
-    
+{% for field in page.fields %}
+
     <div class="Contact_column{{field.size}}">
     
     	<input type="text" class="Contact_input {{field.hiddenClass}}" name="{{field.name}}" type="{{field.type}}" data-shipping-{{field.name}} placeholder="{{field.label}}">
@@ -42,7 +42,7 @@ fields:
     
     {% endfor %}
     
-    <label class="Contact_label">Selecione os produtos</label>
+    <label class="Contact_label">Selecione os produtos:</label>
     
     <div class="Contact_column2">
     
