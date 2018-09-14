@@ -11,6 +11,7 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 include: ['_pages']
+exclude: ['.git', 'Gemfile', 'Gemfile.lock', 'gulpfile.js', 'package-lock.json', 'package.json', '.gitignore', '.forestry', '.sass-cache', 'node_modules']
 sass:
   style: compressed
   sass_dir: _sass
