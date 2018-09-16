@@ -18,11 +18,6 @@ sodioVd: 0%
 ph: '4,3'
 brix: '3,5'
 abv: 0,4%
-menu:
-  header:
-    weight: 1
-    parent: produtos
-    title: teste
 
 ---
 {{content}}
