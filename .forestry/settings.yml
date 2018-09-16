@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: admin
-webhook_url: http://kombuchakom.com.br/_site/webhook.php
+webhook_url: http://18.231.176.70/webhook
 sections:
 - type: jekyll-posts
   label: Posts
