@@ -29,14 +29,6 @@
 			transition: all .9 linear;
 		}
 
-		&:hover:after {
-			float: left;
-    		margin-left: 6px;
-    		z-index: 3;
-    		content: "-";
-    		position: absolute;
-		}
-
 	}
 
 	&_submenu {
@@ -127,6 +119,19 @@
 
 			&__link {
 				float: left;
+
+				&:hover:after {
+					content: "";
+					width: 0;
+				}
+			}
+
+			&:hover:after {
+				float: left;
+	    		margin-left: 6px;
+	    		z-index: 3;
+	    		content: "-";
+	    		position: absolute;
 			}
 		}
 
