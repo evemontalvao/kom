@@ -2,7 +2,7 @@ module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
   shipit.initConfig({
     default: {
-      workspace: '/tmp/kom',
+      workspace: '/tmp/kombucha',
       repositoryUrl: 'https://github.com/evemontalvao/kom',
       ignores: ['.git', 'node_modules'],
       keepReleases: 2,
@@ -16,19 +16,18 @@ module.exports = function (shipit) {
     }
   });
 
-  shipit.blTask('dependencies', function() {
-    return shipit.local('cd '+shipit.config.workspace
-      + ' && npm install'
-      + ' && jekyll build')
-  });
-
-  shipit.on('fetched', function() {
-    shipit.start('dependencies');
+  shipit.blTask('copy', () => {
+    return shipit.local(`cd ${shipit.config.workspace} && jekyll build`)
   });
 
   shipit.blTask('npm', () => {
-    return shipit.remote(`cd ${shipit.releasePath} && source ~/.nvm/nvm.sh use v7 && npm i && pm2 start app.js -f --name='kom'`)
+    return shipit.remote(`
+      cd ${shipit.releasePath} && source ~/.nvm/nvm.sh use v8 && npm i && pm2 delete ${shipit.config.branch} || true && pm2 start app.js -f --name='${shipit.config.branch}'`)
   });
+
+  shipit.on('fetched', () => {
+    shipit.start('copy')
+  })
 
   shipit.start('deploy', ['npm']);
 };
