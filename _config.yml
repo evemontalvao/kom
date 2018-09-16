@@ -4,7 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description. # the subpath of your site, e.g. /blog
-url: "http://kombuchakom.com.br/_site" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:2107" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -15,6 +15,7 @@ exclude: ['.git', 'Gemfile', 'Gemfile.lock', 'gulpfile.js', 'package-lock.json',
 sass:
   style: compressed
   sass_dir: _sass
+pages: ./_pages
 permalink: /:title
 paginate: 5
 plugins:

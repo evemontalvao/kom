@@ -15,8 +15,10 @@
     "autoprefixer": "^9.1.5",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.3",
     "browser-sync": "^2.24.7",
     "cssnano": "^4.1.0",
+    "express": "^4.16.3",
     "gulp": "3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-browserify": "^0.5.1",
@@ -39,6 +41,7 @@
     "postcss-initial": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "postcss-mixins": "^6.2.0",
-    "postcss-pxtorem": "^4.0.1"
+    "postcss-pxtorem": "^4.0.1",
+    "shipit-deploy": "^4.1.1"
   }
 }

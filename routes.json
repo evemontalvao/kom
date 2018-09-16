@@ -1,0 +1,17 @@
+{
+	"/": {
+		"file": "index.html"
+	},
+	"/delivery": {
+		"file": "delivery.html"
+	},
+	"/parceiros": {
+		"file": "parceiros.html"
+	},
+	"/contato": {
+		"file": "contato.html"
+	},
+	"/faq": {
+		"file": "faq.html"
+	}
+}
