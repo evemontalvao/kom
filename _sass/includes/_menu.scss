@@ -29,6 +29,14 @@
 			transition: all .9 linear;
 		}
 
+		&:hover:after {
+			float: left;
+    		margin-left: 6px;
+    		z-index: 3;
+    		content: "-";
+    		position: absolute;
+		}
+
 	}
 
 	&_submenu {
@@ -96,7 +104,7 @@
 		display: block;
 		overflow: hidden;
 		background-color: #000;
-		transition: all .4s linear;
+		transition: all 0.4s linear;
 
 		&_submenu {
 			margin-left: 100px;
@@ -104,7 +112,7 @@
 		}
 
 		&.active {
-			height: 112px;
+			height: 218px;
 			display: block;
 		}
 		
@@ -112,9 +120,13 @@
 			lost-column: 1/1;
 			display: block;
 			text-align: left;
-
+			padding: 7px 0;
 			&:after {
 				content: ""
+			}
+
+			&__link {
+				float: left;
 			}
 		}
 

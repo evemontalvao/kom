@@ -151,10 +151,19 @@
 					margin: 0 auto 20px;
 				}
 			}
+
+			&__highlight {
+				margin: 0 0 7px;
+			}
+
+			&__sub, &__gluten {
+				margin: 10px 0 10px;
+			}
 		}
 
 		&_termometer {
 			lost-column: 12/12;
+			margin-bottom: 30px;
 		}
 	}
 }

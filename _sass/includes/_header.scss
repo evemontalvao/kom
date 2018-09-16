@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 768px) {
 	.Header {
-		background-image: none;
+		background-image: none !important;
 		
 		&_listContainer {
 			lost-column: 8/12;
