@@ -17,7 +17,7 @@ module.exports = function (shipit) {
   });
 
   shipit.blTask('copy', () => {
-    return shipit.local(`cd ${shipit.config.workspace} && jekyll build`)
+    return shipit.local(`cd ${shipit.config.workspace} && npm i gulp && gulp && jekyll build`)
   });
 
   shipit.blTask('npm', () => {
