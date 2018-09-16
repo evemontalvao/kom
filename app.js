@@ -9,10 +9,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/assets', express.static(__dirname + '/assets'));
 
+app.use('/webhook', (req, res) => {
+	console.log(req.body)
+})
+
 app.use('/', (req, res) => {
   const file = routes[req.path].file
 
   res.sendFile(path.resolve(`${process.cwd()}/${file}`))
+
 });
 
 app.listen('2107', () => {
