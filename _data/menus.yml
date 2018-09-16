@@ -1,42 +1,26 @@
 ---
-{
-  "header": [
-    {
-      "url": "javascript:void(0)",
-      "title": "Produtos",
-      "identifier": "produtos",
-      "submenu": [
-        {
-          "url": "/produtos/melissa-officinalis",
-          "title": "Melissa Officinalis",
-          "menus": "produtos"
-        },
-        {
-          "url": "/produtos/hibiscus-sabdariffa",
-          "title": "Hibiscus Sabdariffa"
-        },
-        {
-          "url": "/produtos/schinus-terebinthifolius",
-          "title": "Schinus Terebinthifolius"
-        }
-      ]
-    },
-    {
-      "url": "/delivery",
-      "title": "Delivery"
-    },
-    {
-      "url": "/parceiros",
-      "title": "Parceiros"
-    },
-    {
-      "url": "/contato",
-      "title": "Contato"
-    },
-    {
-      "url": "/faq",
-      "title": "FAQ"
-    }
-  ]
-}
----
+header:
+- url: javascript:void(0)
+  title: Produtos
+  identifier: produtos
+  submenu:
+  - url: "/produtos/melissa-officinalis"
+    title: Melissa Officinalis
+    menus: produtos
+  - url: "/produtos/hibiscus-sabdariffa"
+    title: Hibiscus Sabdariffa
+  - url: "/produtos/schinus-terebinthifolius"
+    title: Schinus Terebinthifolius
+  weight: 1
+- url: "/faq"
+  title: FAQ
+  weight: 2
+- url: "/contato"
+  title: Contato
+  weight: 3
+- url: "/parceiros"
+  title: Parceiros
+  weight: 4
+- url: "/delivery"
+  title: Delivery
+  weight: 5
