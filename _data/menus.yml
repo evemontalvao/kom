@@ -1,5 +1,17 @@
 ---
 header:
+- url: "/delivery"
+  title: Delivery
+  weight: 5
+- url: "/parceiros"
+  title: Parceiros
+  weight: 4
+- url: "/contato"
+  title: Contato
+  weight: 3
+- url: "/faq"
+  title: FAQ
+  weight: 2
 - url: javascript:void(0)
   title: Produtos
   identifier: produtos
@@ -12,15 +24,3 @@ header:
   - url: "/produtos/schinus-terebinthifolius"
     title: Schinus Terebinthifolius
   weight: 1
-- url: "/faq"
-  title: FAQ
-  weight: 2
-- url: "/contato"
-  title: Contato
-  weight: 3
-- url: "/parceiros"
-  title: Parceiros
-  weight: 4
-- url: "/delivery"
-  title: Delivery
-  weight: 5
