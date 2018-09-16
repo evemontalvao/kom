@@ -37,6 +37,6 @@ fields:
     label: Placeholder
     name: label
 pages:
+- parceiros.md
 - delivery.md
 - contatos.md
-- parceiros.md
