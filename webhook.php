@@ -8,8 +8,10 @@ $req_dump = print_r( $request, true );
 
 $arr = json_decode($req_dump);
 if($arr->event == "post_publish" && $arr->event == true) {
-	$output = shell_exec('mkdir tmp && git clone https://github.com/evemontalvao/kom tmp && cp -af tmp/ ./ && rm -rf tmp');
-	$fp = file_put_contents( 'request.log', $output );
+	shell_exec('git clone https://github.com/evemontalvao/kom');
+	shell_exec('cp -af tmp/ ./ > request.log');
+	shell_exec('rm -rf tmp');
+
 }
 
 
