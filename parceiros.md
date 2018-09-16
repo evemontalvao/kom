@@ -1,5 +1,5 @@
 ---
-title: Parceiros
+title: Parceiross
 layout: page
 permalink: "/parceiros"
 subtitle: Seja nosso parceiro, preencha os dados e retornaremos seu contato.
@@ -35,7 +35,6 @@ fields:
 - name: complemento
   label: Complemento
   size: 2
-published: false
 
 ---
 <form action="email_parceiros.php" data-partners data-shipping name="contact_form" method="POST" class="Contact" data-fade-medium>
