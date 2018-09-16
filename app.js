@@ -12,7 +12,7 @@ app.use('/assets', express.static(__dirname + '/assets'));
 app.use('/', (req, res) => {
   const file = routes[req.path].file
 
-  res.sendFile(path.resolve(`./_site/${file}`))
+  res.sendFile(path.resolve(`${process.cwd()}/_site/${file}`))
 });
 
 app.listen('2107', () => {

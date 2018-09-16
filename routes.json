@@ -22,5 +22,8 @@
 	},
 	"/produtos/schinus-terebinthifolius": {
 		"file": "produtos/schinus-terebinthifolius.html"
+	},
+	"/admin/": {
+		"file": "admin/index.html"
 	}
 }

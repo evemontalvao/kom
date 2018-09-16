@@ -26,5 +26,9 @@ module.exports = function (shipit) {
     shipit.start('dependencies');
   });
 
-  shipit.start('deploy');
+  shipit.blTask('npm', () => {
+    return shipit.remote(`cd ${shipit.releasePath} && source ~/.nvm/nvm.sh use v7 && npm i && pm2 start app.js -f --name='kom'`)
+  });
+
+  shipit.start('deploy', ['npm']);
 };
