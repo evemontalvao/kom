@@ -13,5 +13,14 @@
 	},
 	"/faq": {
 		"file": "faq.html"
+	},
+	"/produtos/hibiscus-sabdariffa": {
+		"file": "produtos/hibiscus-sabdariffa.html"
+	},
+	"/produtos/melissa-officinalis": {
+		"file": "produtos/melissa-officinalis.html"
+	},
+	"/produtos/schinus-terebinthifolius": {
+		"file": "produtos/schinus-terebinthifolius.html"
 	}
 }
