@@ -1,5 +1,5 @@
 ---
-title: Parceiros
+title: Parceiross
 layout: page
 permalink: "/parceiros"
 subtitle: Seja nosso parceiro, preencha os dados e retornaremos seu contato.
