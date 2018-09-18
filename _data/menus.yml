@@ -17,10 +17,10 @@ header:
   identifier: produtos
   submenu:
   - url: "/produtos/melissa-officinalis"
-    title: Melissa Officinalis
+    title: Melissa, Capim Limão, Abacaxi e Gengibre
     menus: produtos
   - url: "/produtos/hibiscus-sabdariffa"
-    title: Hibiscus Sabdariffa
+    title: Hibisco e Frutas Vermelhas
   - url: "/produtos/schinus-terebinthifolius"
-    title: Schinus Terebinthifolius
+    title: Aroeira, Maçã verde e Menta
   weight: 1

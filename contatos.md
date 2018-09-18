@@ -20,7 +20,7 @@ fields:
 
 	{% for field in page.fields %}
 
-	<input type="text" class="Contact_input" name="{{field.name}}" data-contact-{{field.name}} type="text" placeholder="{{field.name}}">
+	<input type="text" class="Contact_input" name="{{field.name}}" data-contact-{{field.name}} type="text" placeholder="{{field.label}}">
 
 	{% endfor %}
 
