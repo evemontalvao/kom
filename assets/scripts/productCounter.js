@@ -39,9 +39,9 @@
 
 			const currentPrice = this.price * value
 
-			this.$result.html(`O valor total é R$${shippingCost? parseInt(shippingCost) + currentPrice : currentPrice},00`)
+			if(value > 0) this.$result.html(`O valor total é R$${shippingCost? parseInt(shippingCost) + currentPrice : currentPrice},00`)
 
-			if(value > 0) currentElement.val(value)
+			if(value > -1) currentElement.val(value)
 		}
 
 	}
