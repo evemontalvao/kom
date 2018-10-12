@@ -8,7 +8,6 @@
 
 	&_listContainer {
 		lost-column: 2/12;
-		lost-offset: 2.7/12;
 		position: relative;
 		top: 290px;
 	}
@@ -18,6 +17,10 @@
 		top: 75px;
 		lost-column: 2/12;
 		lost-offset: 1/12;
+
+		img { 
+			width: 120%;
+		}
 	}
 
 	&_bottleContainer {
@@ -46,7 +49,39 @@
 	}
 }
 
+.Delivery {
+	lost-column: 2.7/12;
+	position: relative;
+	top: 100px;
+	text-align: center;
+	padding: 70px;
+
+	&_yellow {
+		text-transform: uppercase;
+		color: #ebbe23;
+		font-weight: 600;
+		font-size: 26px;
+	}
+}
+
 @media screen and (max-width: 768px) {
+
+	.Delivery {
+		lost-column: 12/12;
+		position: relative;
+		top: 10px;
+		text-align: center;
+		margin: 30px 0 95px;
+		padding: 0;
+
+		&_yellow {
+			text-transform: uppercase;
+			color: #ebbe23;
+			font-weight: 600;
+			font-size: 26px;
+		}
+	}
+
 	.Header {
 		background-image: none !important;
 		

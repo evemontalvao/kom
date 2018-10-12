@@ -43,3 +43,9 @@ fields:
 	<input type="hidden" name="_next" value="{{site.url}}/success" />
 
 </form>
+
+<footer class="Footer">
+	<div class="Footer_content">
+		RUA SERVER DO VOUGA, N 50, ATIBAIA - SP CEP: 12944-006 <a href="mailto:parceria@kombuchakom.com.br">PARCERIA@KOMBUCHAKOM.COM.BR</a> | <a href="https://www.facebook.com/kombuchaKom/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> | <a href="https://www.instagram.com/kombuchakom" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+	</div>
+</footer>
