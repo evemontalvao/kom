@@ -3,7 +3,7 @@
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
 		
-	$to = "evemontalvao@gmail.com";
+	$to = "pedidos@kombuchakom.com.br";
 	$nome = $_POST['name'];
 	$phone = $_POST['phone'];
 	$email = $_POST['email'];

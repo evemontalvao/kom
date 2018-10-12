@@ -3,7 +3,6 @@
 		margin-top: 117px;
 		float: left;
 		lost-column: 1.5/12;
-		lost-offset: 0.5/12;
 	}
 
 	&_bottleImg {
@@ -12,7 +11,7 @@
 	
 	&_Title {
 		lost-column: 1/12;
-		lost-offset: 2/12;
+		lost-offset: 1/12;
 		writing-mode: vertical-rl;
 		transform: rotate(-180deg);
 		margin: 0 auto;
@@ -60,7 +59,7 @@
 	}
 
 	&_logo {
-		lost-column: 0.9/12;
+		lost-column: 2/12;
 		position: relative;
 		top: 30px;
 		& img {
