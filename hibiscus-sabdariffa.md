@@ -15,9 +15,9 @@ carbosQtd: 17g
 carbosVd: 6%
 sodioQtd: 9mg
 sodioVd: 0%
-ph: '4,3'
-brix: '3,5'
-abv: 0,4%
+ph: '3,5'
+brix: '0%'
+abv: 0,07%
 
 ---
 {{content}}
