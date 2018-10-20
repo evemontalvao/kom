@@ -14,6 +14,8 @@
 		}
 
 		sum(event) {
+			const currentQtd = parseInt($(event.target).parent().parent().find('[data-product-value]').val()) + 1
+
 			const shippingCost = localStorage.getItem('shippingCost')
 
 			const product = $(event.target).attr('data-product-sum')
@@ -22,16 +24,17 @@
 
 			this.items = this.items + 1
 
-			console.log(this.items)
-
 			const currentPrice = this.price * this.items
 
 			this.$result.html(`O valor total é R$${shippingCost? parseInt(shippingCost) + currentPrice : currentPrice},00`)
 
-			currentElement.val(this.items)
+			currentElement.val(currentQtd)
 		}
 
 		subtract(event) {
+			const currentQtd = parseInt($(event.target).parent().parent().find('[data-product-value]').val())
+
+			if(currentQtd == 0) return
 
 			const shippingCost = localStorage.getItem('shippingCost')
 
@@ -41,13 +44,11 @@
 
 			this.items = this.items - 1
 			
-			console.log(this.items)
-
 			const currentPrice = this.price * this.items
 
 			if(this.items >= 0) this.$result.html(`O valor total é R$${shippingCost? parseInt(shippingCost) + currentPrice : currentPrice},00`)
 
-			if(this.items > -1) currentElement.val(this.items)
+			currentElement.val(currentQtd - 1)
 		}
 
 	}
